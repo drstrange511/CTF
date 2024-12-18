@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Welcome <%= user.name %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Welcome, <%= user.name %>!</h1>>
+
+        <div class="pictures">
+            <div class="picture">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.-ykukAQoEaWAWrP7mYGrPQAAAA&pid=Api&P=0&h=180" alt="Alice" />
+                <p>Hey I, am Alice</p>
+            </div>
+            <div class="picture">
+                <img src="https://static.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="Bob" />
+                <p>Hey,I am Bob</p>
+            </div>
+        </div>
+
+        <a href="/logout">Logout</a>
+        <a href="/branch">Index</a>
+    </div>
+</body>
+</html>

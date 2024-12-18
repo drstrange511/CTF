@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch Management</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Link to your external CSS -->
+</head>
+<body>
+    <h1>Branch Management</h1>
+
+    <!-- Display Accounts -->
+    <h3>Accounts</h3>
+    <ul>
+        <% for (let RUT in accounts) { %>
+            <% if (accounts[RUT].name === "Alice") { %>
+                <li><%= accounts[RUT].name %> (Password:<%= RUT %>)</li>
+                <% } %>
+                <ul>
+                    <% accounts[RUT].branches.forEach(branch => { %>
+                        <li><%= branch %></li>
+                    <% }); %>
+                </ul>
+            
+        <% } %>
+    </ul>
+
+    <!-- Form to Add a Branch -->
+    <h3>Add a Branch</h3>
+    <form action="/branch/add" method="POST">
+        <label for="RC2">Password :</label>
+        <input type="text" name="userRUT" id="userRUT" required><br>
+
+        <label for="branchName">Branch Name:</label>
+        <input type="text" name="branchName" id="branchName" required><br>
+
+        <button type="submit">Add Branch</button>
+    </form>
+
+    <!-- Link to go back to home page -->
+    <a href="/home">Go Back to Home Page</a>
+</body>
+</html>
