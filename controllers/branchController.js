@@ -21,7 +21,7 @@ const addBranch = (req, res) => {
     accounts[userRUT].branches.push(branchName);
 
     // Optionally, add a hidden flag for Bob's account
-    if (userRUT === '654321') {
+    if (userRUT === '43bc2011d5f3d9fd') {
         accounts[userRUT].branches.push('CTF{IDOR_found}'); // Flag added to Bob's account
     }
 
