@@ -1,7 +1,7 @@
 // controllers/authController.js
 const accounts = {
     'ff2c61957edd885d': { name: 'Alice', RUT: 'ff2c61957edd885d', branches: [] },
-    '654321': { name: 'Bob', RUT: '654321', branches: [] }
+    '43bc2011d5f3d9fd': { name: 'Bob', RUT: '43bc2011d5f3d9fd', branches: [] }
 };
 
 // Show login page
